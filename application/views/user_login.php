@@ -109,7 +109,7 @@
                                         <p class="text-inverse text-left"><b>Your Authentication Team</b></p>
                                     </div>
                                     <div class="col-md-10">
-                                        <a href="<?php echo base_url().'blog/viewBlog/';?>"><p class="text-inverse text-left"><b>Guest User</b></p></a>
+                                        <a href="<?php echo base_url().'user/viewBlog';?>"><p class="text-inverse text-left"><b>Guest User</b></p></a>
                                         <!-- <img src="assets/images/auth/Logo-small-bottom.png" alt="small-logo.png"> -->
                                     </div>
                                 </div>

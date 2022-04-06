@@ -9,6 +9,10 @@ class Blog extends CI_Controller {
     $this->load->library('pagination');
     $this->load->database();
     $this->load->model('blog_model');
+    if(empty($this->session->userdata('id')))
+         {
+         redirect(base_url(),'refresh');
+         }
   }
   public function blogList()
   {
@@ -20,9 +24,34 @@ class Blog extends CI_Controller {
     $config['base_url'] = base_url('blog/viewBlog');
     $config['per_page'] = 4;
     $config['total_rows']= $this->blog_model->getTotalRows();
+
+
+////////////
+
+   $config['full_tag_close'] = '</ul>';
+                $config['num_tag_open'] = '<li>';
+                $config['num_tag_close'] = '</li>';
+                $config['cur_tag_open'] = '<li class="active"><a href="#">';
+                $config['cur_tag_close'] = '</a></li>';
+                $config['prev_tag_open'] = '<li>';
+                $config['prev_tag_close'] = '</li>';
+                $config['first_tag_open'] = '<li>';
+                $config['first_tag_close'] = '</li>';
+                $config['last_tag_open'] = '<li>';
+                $config['last_tag_close'] = '</li>';
+
+                $config['next_link'] = 'Next Page';
+                $config['next_tag_open'] = '<li><i class="fa fa-long-arrow-right"></i>';
+                $config['next_tag_close'] = '</li>';
+
+                $config['prev_link'] = 'Previous Page';
+                $config['prev_tag_open'] = '<li><i class="fa fa-long-arrow-left"></i>';
+                $config['prev_tag_close'] = '</li>';
+/////
     $this->pagination->initialize($config);
     $data['blogdetails']=$this->blog_model->getBlogDetailsPagination($config['per_page'],$this->uri->segment(3));
-    $this->load->view('view_blogs',$data);
+    //$this->load->view('view_blogs',$data);
+    $this->load->view('user/blog_view',$data);
   }
   public function addBlog()
   {

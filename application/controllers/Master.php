@@ -8,6 +8,10 @@ class Master extends CI_Controller {
     $this->load->library(array('session'));
     $this->load->database();
    $this->load->model('master_model');
+   if(empty($this->session->userdata('id')))
+         {
+         redirect(base_url(),'refresh');
+         }
  }
 public function chkcategoryName()
 {

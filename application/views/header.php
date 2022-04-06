@@ -125,11 +125,11 @@
                                 
                             </li>
                             <li class="user-profile header-notification">
-                                <a href="<?php echo base_url(); ?>#!">
+                                
                                     <img src="<?php echo base_url(); ?>assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
                                     <span>Admin</span>
                                     <i class="ti-angle-down"></i>
-                                </a>
+                                
                                 <ul class="show-notification profile-notification">
                                  
                                     <li>
