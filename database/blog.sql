@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 06, 2022 at 08:17 PM
+-- Generation Time: Apr 07, 2022 at 05:50 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.14
 
@@ -44,10 +44,10 @@ CREATE TABLE `blogs` (
 --
 
 INSERT INTO `blogs` (`id`, `blog_title`, `blog_description`, `category_id`, `inserted_date`, `upload_doc`, `upload_type`, `folder_name`, `del`) VALUES
-(1, 'Planet MySQL', 'Planet MySQL is the official MySQL blog that regularly publishes latest news and updates about MySQL database. It also has a well-known Q&A forum where users can post their questions, and expect a quick response. It publishes up to 3-4 new blog posts daily from its community members, mostly about configurations and optimizations.', 1, '2022-04-04', '1649068812mysql.png', 'image', '04.04.2022', 0),
+(1, 'Planet MySQL', 'Planet MySQL is the official MySQL blog that regularly publishes latest news and updates about MySQL database. It also has a well-known Q&A forum where users can post their questions, and expect a quick response. It publishes up to 3-4 new blog posts daily from its community members, mostly about configurations and optimizations.', 1, '2022-04-04', '1649302093MySQL2.jpg', 'image', '07.04.2022', 0),
 (2, 'MySQL Tutorials', 'MySQL Tutorials contains a nice collection of tutorials suitable for beginners as well as advanced database administrators. Many of their tutorials also contain an interactive SQL editor that allows you to try SQL queries and analyze results.', 1, '2022-04-04', '1649070426mysql1.png', 'image', '04.04.2022', 0),
 (3, 'Several Nines Blog', 'Several Nines creates advanced database management products for open source databases. Their database blog provides rich tips, articles and tools to help you manage your database efficiently. Their articles are more about database deployment in cloud and clusters. So it is quite useful for administrators in medium-large businesses and enterprises.', 1, '2022-04-04', '1649070516MySQL2.jpg', 'image', '04.04.2022', 0),
-(4, 'Scalegrid blog', 'Scalegrid provides hosted database management services for popular databases. Their blog regularly publishes quality articles, tutorials and tips to help you make the most of working with your databases. They also publish performance benchmarks and comparisons among different tools and database configurations, to help readers pick the right technology for their business.', 1, '2022-04-04', '1649070681MySQL3.png', 'image', '04.04.2022', 0),
+(4, 'Scalegrid blog', 'Scalegrid provides hosted database management services for popular databases. Their blog regularly publishes quality articles, tutorials and tips to help you make the most of working with your databases. They also publish performance benchmarks and comparisons among different tools and database configurations, to help readers pick the right technology for their business.', 1, '2022-04-04', '1649303170MySQL2.jpg', 'image', '07.04.2022', 0),
 (5, ' PHP Manual', 'Arguably one of the best PHP blogs of all time for beginners and developers, PHP manual brings to you every single thing that you are going to need in order to learn more about PHP. You can post comments and then experience all the functions that PHP offers. Not to mention that you will also learn about the practical applications of PHP.', 2, '2022-04-04', '1649088128php.png', 'image', '04.04.2022', 0),
 (6, ' SitePoint: PHP Blog for Beginners', 'Most applications and concepts of PHP web development are covered in this blog and that is why you need to give this website and also the blog posts here a chance. For beginners out there who have no idea about PHP, this is the perfect platform to know.', 2, '2022-04-04', '1649088166php.png', 'image', '04.04.2022', 0),
 (7, 'FromDev: PHP Tutorials', 'There is no doubt that FromDev is one of the best platforms where you are going to find some PHP as well as some other web development-related blogs as well. So, there is simply not a single speck of doubt about the fact that you should try it once.', 2, '2022-04-04', '1649088214php.png', 'image', '04.04.2022', 0),

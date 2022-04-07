@@ -54,9 +54,7 @@
                     <i class="fab fa-linkedin tm-social-icon"></i>
                 </a>
             </div>
-            <p class="tm-mb-80 pr-5 text-white">
-                Xtra Blog is a multi-purpose HTML template from TemplateMo website. Left side is a sticky menu bar. Right side content will scroll up and down.
-            </p>
+           
         </div>
     </header>
     <div class="container-fluid">
@@ -98,18 +96,21 @@
                 </article>
                 <?php } ?>
             </div>
-            <div class="row tm-row tm-mt-100 tm-mb-75">
-                <div class="tm-prev-next-wrapper">
-                <!-- <?php echo $this->pagination->create_links(); ?> -->
+            <div class="row ">
+
+                <div class="tm-paging-wrapper">
+               
+                <nav class="tm-paging-nav d-inline-block">
+                     <?php echo $this->pagination->create_links(); ?>
 
 
-                 <nav aria-label="...">
-                                                <ul class="pagination justify-content-center m-t-20 m-b-20">
-                                                   <?php echo $this->pagination->create_links(); ?>
-                                                </ul>
-                                            </nav>
-                                            <!-- Pagination end -->
-                </div>
+
+                 </nav>
+
+
+    
+  
+            </div>            
             </div>            
             <footer class="row tm-row">
                 <hr class="col-12">

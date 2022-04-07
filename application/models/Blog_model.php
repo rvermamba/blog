@@ -20,7 +20,7 @@ public function getBlogDetailsPagination($limit,$offset)
 } 
 public function getBlogDetails()
 {
-  $this->db->select('*,mc.category_name');
+  $this->db->select('b.*,mc.id as category_id,mc.category_name');
   $this->db->from('blogs as b');
   $this->db->join('master_category as mc','mc.id=b.category_id','LEFT');
   $this->db->where('b.del',0);

@@ -21,7 +21,7 @@
                                         </div>
                                     </div>
                                     <div class="card-block">
-                                        <h4 class="sub-title">Add Vendor </h4>
+                                        <h4 class="sub-title">Edit Blog </h4>
                                         <?php 
                                         if($this->session->flashdata('msg') != ''){ ?>
                                             <div class="alert alert-success"  id="true" style="font-weight:bold;text-align:center">
@@ -57,7 +57,7 @@
                     <?php 
                       //  echo "<pre>";print_r($category);die();
     foreach($category as $list){ ?>
-        <option value="<?php echo $list->id;?>" > <?php echo $list->category_name; ?> </option>
+        <option value="<?php echo $list->id;?>" <?php if($list->id ==$blogdetails->category_id){ ?>selected <?php } ?>> <?php echo $list->category_name; ?> </option>
     <?php } ?>
                    
                 </select>

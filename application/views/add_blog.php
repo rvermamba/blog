@@ -21,7 +21,7 @@
                                         </div>
                                     </div>
                                     <div class="card-block">
-                                        <h4 class="sub-title">Add Vendor </h4>
+                                        <h4 class="sub-title">Add Blog</h4>
                                         <?php 
                                         if($this->session->flashdata('msg') != ''){ ?>
                                             <div class="alert alert-success"  id="true" style="font-weight:bold;text-align:center">
